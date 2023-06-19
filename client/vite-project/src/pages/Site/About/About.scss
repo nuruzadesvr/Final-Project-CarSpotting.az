@@ -1,0 +1,29 @@
+.about__container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    .about__box{
+    width: 80%;
+    min-height: 500px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .about__text{
+        color: white;
+    }
+    .about__box__left
+    { width: 550px;
+        img{
+            width: 550px;
+            height: 350px;
+            object-fit: cover;
+            padding-bottom: 10px;
+        }
+    }
+ 
+}
+}

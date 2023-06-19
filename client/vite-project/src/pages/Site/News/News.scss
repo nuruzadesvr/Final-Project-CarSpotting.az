@@ -1,0 +1,30 @@
+.news__container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 150px;
+    .news__box{
+
+        width: 80%;
+        min-height: 500px;
+        border-top: 1px solid gray;
+       padding-top: 10px;
+      
+        margin: auto;
+    }
+    .news__card{
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+    
+    
+}
+.eventnewstitle{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+}

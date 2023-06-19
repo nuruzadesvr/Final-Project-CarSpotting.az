@@ -1,0 +1,23 @@
+.eventnews__container{
+    width: 100%;
+    min-height:500px ;
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .event__card{
+        display: flex;
+        width: 800px;
+        border: 1px solid gray;
+        height: 400px;
+       
+        img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .event__text{
+            color: white;
+        }
+    }
+}

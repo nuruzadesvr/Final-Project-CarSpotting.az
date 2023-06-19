@@ -1,0 +1,46 @@
+.shop__container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    .shop__vitrin{
+        width: 80%;
+        min-height:200px ;
+        margin: auto;
+       display: flex;
+       justify-content: center;
+       gap: 30px;
+       flex-wrap: wrap;
+       
+        
+    }
+}
+.product__card{
+    width: 260px; 
+    height: 440px;
+    .product__info{
+        padding: 10px;
+    }
+    img{
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+    }
+    h5{
+        color: white;
+        padding-bottom: 10px;
+    }
+    .product__price{
+        color: white;
+        padding-bottom: 10px;
+    }
+    .addbtn{
+        width: 100%;
+        height: 40px;
+        border-radius: 30px;
+        border: 1px solid gray;
+        color: white;
+        background-color: rgba(128, 128, 128, 0);
+    }
+ }

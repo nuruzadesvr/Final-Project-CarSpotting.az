@@ -26,7 +26,7 @@ function Carousel() {
  
 
 
-      <div>
+      <div className='slider__box'>
         <img className='slider__image' src="https://a.d-cd.net/FMAAAgABgOA-1920.jpg" alt="" />
         <div className='slider__text__retrocar'>
             <p>Tanınmış avtoblogger Fəxri Əsədov izləyicləri ilə görüşəcək.</p>
@@ -38,7 +38,7 @@ function Carousel() {
 
 
 
-      <div>
+      <div  className='slider__box'>
         <img className='slider__image' src="https://galerie.automobile.tn/min/2018/08/red-bull-car-park-drift-2018-36410.jpg    " alt="" />
         <div className='slider__text__retrocar'>
             <p>Red-Bull Car park drift yarışı keçiriləcək.</p>
@@ -52,7 +52,7 @@ function Carousel() {
 
 
 
-      <div>
+      <div  className='slider__box'>
         <img className='slider__image' src="https://www.carid.com/images/inspiration/infiniti/q50/18/1.jpg" alt="" />
         <div className='slider__text__retrocar'>
             <p>"Stance Culture" başlığı altında Bakıda static maşınların eventi baş tutdu.</p>
@@ -63,7 +63,7 @@ function Carousel() {
 
 
 
-      <div>
+      <div  className='slider__box'>
         <img className='slider__image' src="https://images.ctfassets.net/1fvlg6xqnm65/VEfGucsEcgDgTFYtfihV8/695f80c9e89667b00030b1f4b2b29ceb/Car__1_.jpg" alt="" />
         <div className='slider__text__retrocar'>
             <p>Formula 1 qran-prisinin həlledici mərhələsi başa çatdı.</p>
@@ -76,7 +76,7 @@ function Carousel() {
 
 
 
-      <div>
+      <div  className='slider__box'>
         <img className='slider__image' src="https://cdn.trend.az/2019/07/29/avtomobil_yurush_290719_03.jpg" alt="" />
         <div className='slider__text__retrocar'>
             <p>Azərbaycan Avtomobil Federasiyasının başçılığı ilə Klassik Avtomobillərin Sərgisi keçirildi.</p>

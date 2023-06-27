@@ -1,0 +1,52 @@
+.admin__navbar__container{
+    width: 80%;
+    height: 80px;
+    margin-left: 20%;
+    background-color: #042331;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    .admin__navbar__right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .dropdown{
+            margin-right: 50px;
+            padding-top: 10px;
+        }
+        .superadmin__dropdown{
+            text-decoration: none;
+            color: rgb(215, 209, 209);
+            display: flex;
+            align-items: center;
+        }
+        .superadmin__dropdown:hover{
+            text-decoration: none;
+            color: gray;
+        }
+        .dropdownlinks{
+            color: black;
+        }
+        .dropdownlinks:hover{
+            text-decoration: none;
+            color: gray;
+        }
+        .dropdown__item{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border-bottom: 1px solid gray;
+        }
+        .admin__profil{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

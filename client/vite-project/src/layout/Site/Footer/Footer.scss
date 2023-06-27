@@ -1,7 +1,8 @@
 .site__footer__container{
     width: 100%;
-    height: 400px;
-background-color: #1d262df5;
+    min-height: 400px;
+	padding-bottom: 40px;
+background-color: #1d262d;
     background-repeat: no-repeat;
     padding-top: 50px;
     .footer__container{
@@ -10,23 +11,33 @@ background-color: #1d262df5;
         margin: auto;
         display: flex;
         justify-content: space-between;
+
     }
 }
 
 
 
 
-.icon__container h5{
+.icon__container{
+
+text-align: center;
+h5{
     color: white;
     padding-bottom: 50px;
+	padding-left: 10px;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
 }
+}
+
+
+
+
 .btn_container{
-    width: 300px;
     height: 100px;
     display: flex;
     gap: 10px;
+	justify-content: space-between;
     
 }
 
@@ -143,13 +154,22 @@ background-color: #1d262df5;
         text-align: center;
         font-family: 'Lato', sans-serif;
     }
-    ul li{
-        list-style-type: none;
-        padding-top: 10px;
-        .foot__page__link{
-            text-decoration: none;
-            color: gray;
-        }
+    ul{
+		padding-top: 10px;
+		li{
+			list-style-type: none;
+			padding-bottom: 20px;
+			
+			.foot__page__link{
+				text-decoration: none;
+				color: gray;
+				font-family: 'Oswald', sans-serif;
+			}
+			.foot__page__link:hover{
+				cursor: pointer;
+				color: rgba(128, 128, 128, 0.377);
+			}
+	} 
     }
 }
 .tiktokiconbox{
@@ -165,4 +185,142 @@ background-color: #1d262df5;
         color: white;
         
     }
+}
+
+.ourservices{
+	h5{
+		font-size: 28px;
+        color: white;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+	}
+	ul{
+		padding-top: 10px;
+		li{
+			list-style-type: none;
+			padding-bottom: 20px;
+			color: gray;
+			font-family: 'Oswald', sans-serif;
+		}
+	} 
+}
+.subscribe__box{
+	p{
+		color: gray;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		font-family: 'Oswald', sans-serif;
+	}
+	h5{
+		font-size: 28px;
+        color: white;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+	}
+	input{
+		width: 15rem;
+		margin-bottom: 20px;
+		height: 40px;
+		border: 2px solid gray;
+		padding-left: 20px;
+		background-color: #bc188800;
+		color:white;
+	}
+	
+
+	
+
+.subscribebtn {
+    position: relative;
+    display: inline-block;
+   border-radius: 10px;
+    padding: 12px 27px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #999999;
+    background: #ffffff;
+    border: 3px solid #999999;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+	
+}
+
+
+.subscribebtn.btn-border-4::after,
+.subscribebtn.btn-border-4::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+	
+}
+
+.subscribebtn.btn-border-4::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.subscribebtn.btn-border-4::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+	
+}
+
+.subscribebtn.btn-border-4:hover {
+    color: #222222;
+	
+}
+
+.subscribebtn.btn-border-4:hover::after,
+.subscribebtn.btn-border-4:hover::before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: #ffffff;
+	border-radius: 10px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+// responsive
+
+@media only screen and (max-width: 768px) and (min-width: 448px) {
+
+.footer__container{
+	flex-direction: column;
+	text-align: center;
+	div{
+		text-align: center;	
+	}
+}
+
+
+}
+
+@media only screen and (max-width: 448px){
+	.footer__container{
+		flex-direction: column;
+		text-align: center;
+		div{
+			text-align: center;	
+		}
+	}
 }

@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     background-color: black;
+    position: relative;
     padding-top: 150px;
     .news__box{
 
@@ -21,10 +22,62 @@
     
     
 }
-.eventnewstitle{
-    color: white;
-    font-size: 30px;
+
+
+.news__title{
     text-align: center;
     padding-top: 10px;
-    font-family:'Times New Roman', Times, serif;
+    padding-bottom: 20px;
 }
+
+  .eventnewstitle{
+      display: inline-block;    
+      position: relative;
+      padding-bottom:10px;  
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+  }
+  .eventnewstitle:after{
+      content: "";    
+      position: absolute;
+      background-color: rgb(150,150,150);
+      height: 3px;
+      width: 0;
+      top: 100%;
+      left: 0;
+      display: inline-block;
+      opacity: 0;
+      -webkit-transition: opacity .4s ease-out, width .4s ease-out  ;
+     -moz-transition: opacity .4s ease-out, width .4s ease-out ;
+     -o-transition: opacity .4s ease-out, width .4s ease-out ;
+     transition: opacity .4s ease-out, width .4s ease-out;
+  }
+  
+  .eventnewstitle:before{
+      content: "*";    
+      width: 22px;
+      height: 22px;
+      display: inline;
+      float: right;
+      margin-left: 8px;
+        margin-top: 8px;
+      background: red;
+      -webkit-transition:  -webkit-transform .4s ease-out;
+     -moz-transition: transform .4s ease-out;
+     -o-transition:  transform .4s ease-out ;
+     transition:transform .4s ease-out, -ms-transform .4s ease-out;
+  }
+  
+  .eventnewstitle:hover:before{
+      transform:rotate(180deg);
+      -ms-transform:rotate(180deg); /* IE 9 */
+      -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+  }
+  
+  .eventnewstitle:hover:after{    
+      opacity: 1;
+      width: 100%;
+
+  }

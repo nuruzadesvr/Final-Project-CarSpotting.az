@@ -3,6 +3,7 @@ import "./Header.scss"
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import { Link } from 'react-router-dom'
+import Burger from '../../../components/Burger/Burger';
 function Header() {
   return (
 <> 
@@ -17,7 +18,10 @@ function Header() {
         </div>
         <div className='login'>
         <div className='login__icon'><PersonIcon/></div>
-        <p>Log In</p>
+       
+          <p><Link className='loginlink' to="/login">Login</Link></p>
+          
+       
         </div>
       </div>
      </div>
@@ -40,16 +44,24 @@ function Header() {
     <p>carspotting.az</p>
   </div>
 </div>
-<div className='navbar__right fill'><ul>
+<div className='navbar__right fill'>
+<div className='hamburger__icon__box'>
+<Burger/>
+
+</div>
+
+  <div className='navbar__link__container'>
+  <ul>
   <li className='list'><Link className='link' to="/">Home</Link></li>
-  <li className='list'><Link className='link' to="/blog">Blog</Link></li>
- 
   <li className='list'><Link className='link' to="/news">News</Link></li>
   <li className='list'><Link className='link' to="/shop">Shop</Link></li>
   <li className='list'><Link className='link' to="/about">About</Link></li>
   <li className='list'><Link className='link' to="/contact">Contact</Link></li>
   
-</ul></div>
+  
+</ul>
+  </div>
+</div>
 </div>
   </section>
   </>

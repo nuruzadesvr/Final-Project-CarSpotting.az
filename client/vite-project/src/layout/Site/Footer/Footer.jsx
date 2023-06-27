@@ -17,7 +17,7 @@ function Footer() {
   <h5>Connect With Us</h5>
 <div class="btn_container">
           
-          <a href="https://www.tiktok.com/@carspotting.az?is_from_webapp=1&sender_device=pc" class="btn btn--1">
+<div>          <a href="https://www.tiktok.com/@carspotting.az?is_from_webapp=1&sender_device=pc" class="btn btn--1">
               <div className='content'>
                   <div className='front'>
                       <div className='border'></div>
@@ -28,9 +28,10 @@ function Footer() {
                       <p>TikTok</p>
                   </div>
               </div>
-          </a>
+          </a></div>
           
-          <a href="https://www.instagram.com/carspotting.az/" class="btn btn--2">
+<div>
+<a href="https://www.instagram.com/carspotting.az/" class="btn btn--2">
               <div className='content'>
                   <div className='front'>
                       <div className='border'></div>
@@ -43,6 +44,8 @@ function Footer() {
               </div>
           </a>
           
+</div>
+          <div>
           <a href="https://youtube.com/@azcarsmedia" class="btn btn--3">
               <div className='content'>
                   <div className='front'>
@@ -57,6 +60,7 @@ function Footer() {
           </a>
           
           
+          </div>
           
 </div>
 </div>
@@ -66,7 +70,7 @@ function Footer() {
 
   <ul>
   <li className='list'><Link className='foot__page__link' to="/">Home</Link></li>
-  <li className='list'><Link className='foot__page__link' to="/blog">Blog</Link></li>
+  <li className='list'><Link className='foot__page__link' to="/news">News</Link></li>
   <li className='list'><Link className='foot__page__link' to="/shop">Shop</Link></li>
   <li className='list'><Link className='foot__page__link' to="/about">About</Link></li>
   <li className='list'><Link className='foot__page__link' to="/contact">Contact</Link></li>
@@ -74,8 +78,26 @@ function Footer() {
 
 </div>
 
-<div>
+<div className='ourservices'>
   <h5>Our Services</h5>
+  <ul>
+    <li>Our Story</li>
+    <li>Benefits</li>
+    <li>About Carspotting</li>
+    <li>Team</li>
+    <li>Careers</li>
+  </ul>
+</div>
+
+
+<div className='subscribe__box'>
+    <h5>SUBSCRIBE CARSPOTTING.AZ</h5>
+    <p>Get all the latest information on Events, Sales and Offers.</p>
+    <div><input type="text" name="" id=""  placeholder='Enter your E-mail adress...'/></div>
+
+    <button class="subscribebtn btn-border-4">Sign Up</button>
+
+
 </div>
 
   

@@ -1,10 +1,12 @@
 .video__main{
     width: 100%;
     position: relative;
+   min-height: 100vh;
+   background-size: contain;
 }
 .video__content{
     width: 100%;
-   min-height: 115vh;
-   background-color: black;
+    min-height: 100vh;
+    background-color: black;
    position: relative;
 }

@@ -1,0 +1,36 @@
+.landingpage__container{
+    width: 80%;
+    right: 0;
+    height: 100vh;
+    margin-left: 20%;
+    background-color: #042331f5;
+    .landingpost__create__box{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .landingpost__create__div__left{
+            h4{
+                color: gray;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+        }
+        .landingpost__create__div__right{
+            button{
+                width: 130px;
+                height: 40px;
+                background-color: blue;
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-size: 18px;
+                .createbtn{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}

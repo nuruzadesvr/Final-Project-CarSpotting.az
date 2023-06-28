@@ -37,7 +37,7 @@ function Contact() {
 
               <div className="contact__main__main">
                 <div className="contact__main">
-                  <div className="contact__box">
+                  <div className="contact__box" id="addressbox">
                     <div className="icon__div">
                       <PlaceIcon className="contact__icon" />
                     </div>

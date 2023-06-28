@@ -2,6 +2,9 @@ import React from 'react'
 import "./Header.scss"
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import LoginIcon from '@mui/icons-material/Login';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link } from 'react-router-dom'
 import Burger from '../../../components/Burger/Burger';
 function Header() {
@@ -12,17 +15,38 @@ function Header() {
      <div className='navbar__up__main'>
       <div className='navbar__up__left'><p>Free shipping on orders over $75. Call us 123-456-789</p></div>
       <div className='navbar__up__right'>
+
         <div className='input__box'>
           <div><SearchIcon className='search__icon'/></div>
           <div><input type="text" placeholder='Search...'/></div>
         </div>
-        <div className='login'>
+
+
+
+
+
+    <div className="dropdown show">
+     <a className="superadmin__dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <div className='login'>
         <div className='login__icon'><PersonIcon/></div>
-       
-          <p><Link className='loginlink' to="/login">Login</Link></p>
-          
-       
+      </div>
+     </a>
+
+  <div className="dropdown-menu dropmenu" aria-labelledby="dropdownMenuLink">
+   <p className="dropdown-item  dropdown__item__site">
+    <div><LoginIcon/></div>
+    <div><Link className='loginlink__site' to="/login">Login</Link></div>
+    </p>
+  <p className="dropdown-item  dropdown__item__site"><div><FavoriteIcon/></div> <div>Wishlist</div></p>
+</div>
+
+    </div>
+
+        <div className='busket__box'>
+          <div className='busket__icon__box'><Link className='link' to="busket">  <ShoppingBasketIcon className='busket__icon'/></Link></div>
+          <div className='busket__product__count'><p>4</p></div>
         </div>
+
       </div>
      </div>
   </div>

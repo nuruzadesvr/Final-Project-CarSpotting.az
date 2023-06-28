@@ -5,4 +5,28 @@
     margin-left: 20%;
     background-color: #042331f5;   
     color: white;
+    .input__container__eventnews{
+
+
+    
+        .input__box__eventnews{
+            display: flex;
+            padding-bottom: 40px;
+            div{
+                width: 300px;
+            }
+        }
+    }
+    .formik__add__eventnews__btn{
+        width: 130px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: green;
+        color: white;
+    }
+    .errormessage{
+        color: red;
+    }
+    
 }

@@ -5,17 +5,19 @@ import facebookdash from "../../../images/facebbokdash.png"
 import twitterdash from "../../../images/twitterdash.png"
 import linkedindash from "../../../images/linkedindash.png"
 import calendardash from "../../../images/calendardash.png"
-
-
+import downloadtable from "../../../images/downloadtable.png"
+import earningtable from "../../../images/earningtable.png"
+import completedtable from "../../../images/completedtable.png"
+import viewstable from "../../../images/viewstable.png"
 function Dashboard() {
   return (
 <>
 <section className='dashboard__container'>
 <div className='statistica__card'>
-  <div className='user__statistica'>  </div>
-  <div className='income__statistica'>  </div>
-  <div className='conversion__statistica'>  </div>
-  <div className='session__statistica'>  </div>
+  <div className='user__statistica'><img src={downloadtable} alt="" />  </div>
+  <div className='income__statistica'><img src={earningtable} alt="" />  </div>
+  <div className='conversion__statistica'><img src={completedtable} alt="" />  </div>
+  <div className='session__statistica'><img src={viewstable} alt="" />  </div>
 </div>
 
 <div className="dashboard__traffic">

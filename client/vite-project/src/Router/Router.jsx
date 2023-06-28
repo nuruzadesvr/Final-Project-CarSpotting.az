@@ -20,6 +20,7 @@ import AdminLandingPage from "../pages/Admin/AdminSite/AdminLandingPage/AdminLan
 import AddLandingPost from "../pages/Admin/AdminSite/AddLandingPost/AddLandingPost";
 import AddProduct from "../pages/Admin/AdminSite/AddProduct/AddProduct";
 import AddNews from "../pages/Admin/AdminSite/AddNews/AddNews";
+import Busket from "../pages/Site/Busket/Busket";
 
 export const Routes = [
   {
@@ -37,6 +38,10 @@ export const Routes = [
       {
         path: "news",
         element: <News />,
+      },
+      {
+        path:"busket",
+        element:<Busket/>
       },
       {
         path: "contact",
@@ -65,11 +70,6 @@ export const Routes = [
       {
         path: "adminnews",
         element: <AdminNews/>,
-      }
-      ,
-      {
-        path: "orders",
-        element: <Orders/>,
       }
       ,
       {

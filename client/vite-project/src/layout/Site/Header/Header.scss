@@ -23,6 +23,22 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        .busket__box{
+            display: flex;
+            position: relative;
+            .busket__product__count{
+                position: absolute;
+                margin-left: 25px;
+                margin-top: -10px;
+            }
+        }
+        .busket__icon{
+            color: white;
+            position: relative;
+            display: flex;
+
+        }
+
         .login{
             display: flex;
             align-items: center;
@@ -31,14 +47,7 @@
             p{
                 padding-top: 15px;
             }
-            .loginlink{
-                color: white;
-                text-decoration: none;
-            }
-            .loginlink:hover{
-                cursor: pointer;
-                color: gray;
-            }
+
             .login__icon{
                 width: 30px;
                 height: 30px;
@@ -137,8 +146,9 @@
         display:block;
         
     }
+    
     .navbar__up__left{
-        display: none;
+        display: none !important;
     }
     .navbar__up__right{
        
@@ -153,6 +163,8 @@
 
 
 @media only screen and (max-width: 448px ) {
+
+
 
 
     .input__box{
@@ -187,5 +199,40 @@
     }
 
 
+
+}
+
+
+
+.dropmenu{
+    width:200px !important;
+}
+
+.superadmin__dropdown{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.superadmin__dropdown:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown__item__site{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid gray;
+
+
+    .loginlink__site{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .loginlink__site:hover{
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
 
 }

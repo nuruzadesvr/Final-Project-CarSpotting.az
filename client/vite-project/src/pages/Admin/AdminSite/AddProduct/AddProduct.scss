@@ -5,4 +5,29 @@
     margin-left: 20%;
     background-color: #042331f5;   
     color: white;
+
+.input__container__product{
+
+
+    
+    .input__box__product{
+        display: flex;
+        padding-bottom: 40px;
+        div{
+            width: 300px;
+        }
+    }
+}
+.formik__add__product__btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+.error__message{
+    color: red;
+}
+
 }
